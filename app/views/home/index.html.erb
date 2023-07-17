@@ -1,5 +1,8 @@
 <%= javascript_pack_tag 'home', 'data-turbolinks-track': 'reload' %>
 
-<%= render "shared/navigation" %>
+<% content_for :head do %>
+  <meta name="description" content="A Dummy Full-Stack application for testing." />
+<% end %>
+
 
 <h1>Hello!</h1>
